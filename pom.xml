@@ -7,6 +7,10 @@
   <version>1.0-SNAPSHOT</version>
   <name>mavenpipeline</name>
   <url>http://maven.apache.org</url>
+  <properties>
+<maven.compiler.source>11</maven.compiler.source>
+<maven.compiler.target>11</maven.compiler.target>
+</properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -15,6 +19,8 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <!-- Build: Configuring plugins and build settings -->
 <build>
 <plugins>
 <!-- Example: Maven Compiler Plugin to compile Java code -->
@@ -23,8 +29,8 @@
 <artifactId>maven-compiler-plugin</artifactId>
 <version>3.8.1</version>
 <configuration>
-<source>1.8</source>
-<target>1.8</target>
+<source>1.7</source>
+<target>1.7</target>
 </configuration>
 </plugin>
 
@@ -52,3 +58,4 @@
 </plugins>
 </build>
 </project>
+
