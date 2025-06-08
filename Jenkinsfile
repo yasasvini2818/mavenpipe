@@ -39,11 +39,11 @@ pipeline
   {
     success
     {
-       sh'Build and run successful'
+       echo Build and run successful
     }
     failure
     {
-       sh'Build failed'
+       echo Build failed
     }
  }
 }
