@@ -41,7 +41,7 @@ pipeline
     {
        sh'Build and run successful'
     }
-    Failure
+    failure
     {
        sh'Build failed'
     }
